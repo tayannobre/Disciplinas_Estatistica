@@ -13,7 +13,7 @@ O banco de dados **p41b.xlsx** contém dados sobre o grau de felicidade de 122 p
 # Dados. 
 
 - **p41b.xlsx** - banco de dados que contém informações sobre o grau de felicidade de 122 países;
-- **happiness.csv** - banco de dados que contém informações sobre o grau de felicidade de 122 países (em formato csv)
+- **happiness.csv** - banco de dados que contém informações sobre o grau de felicidade de 122 países (em formato csv).
 
 # 1.1. Neste relatório, serão realizadas:
 
