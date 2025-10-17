@@ -1,6 +1,7 @@
 # 1. Introdução
 
-O banco de dados happiness.xls contém dados sobre o grau de felicidade de 122 países, a aprtir das variáveis: 
+O banco de dados p41b.xlsx contém dados sobre o grau de felicidade de 122 países, a partir de algumas variáveis abaixo: 
+
 - **Hemisphere (Hemisfério norte e sul)**;
 - **HDI (Indice de Desenvolvimento Humano)**;
 - **GDP_PerCapita (PIB Per Capita)**;
@@ -13,16 +14,14 @@ O banco de dados happiness.xls contém dados sobre o grau de felicidade de 122 p
 # 1.1. Neste relatório, serão realizadas:
 
 -   Análise descritiva;
-
--   Correções de variáveis;
-
+-   Criação de gráficos para entender a distribuição;
 -   Estudo de correlação.
 
 
 # 2. Importação e preparação dos dados
 
 ``` r 
-# IMPORTANDO O ARQUIVO happiness.xlsx
+# IMPORTANDO O ARQUIVO p41b.xlsx
 
 # 2.1. Instalando o pacote
 install.packages("readxl")
@@ -37,6 +36,20 @@ happiness = read_excel("p41b.xlsx")
 head(happiness)
 
 ```
+### Tabela: Recorte do banco de dados de felicidade
+
+A tabela abaixo apresenta um recorte do conjunto de dados, com informações sobre alguns países do Hemisfério Norte e suas respectivas variáveis socioeconômicas e de consumo.
+
+| Nº | Country     | Region          | Hemisphere | HappinessScore |  HDI | GDP_PerCapita | Beer_PerCapita | Spirit_PerCapita | Wine_PerCapita | logwine  | loggdp  |
+|----|--------------|-----------------|-------------|----------------|------|----------------|----------------|------------------|----------------|----------|---------|
+| 1  | Denmark      | Western Europe  | north       | 7.526          | 928  | 53.579         | 224            | 81               | 278            | 2.444045 | 1.728995 |
+| 2  | Switzerland  | Western Europe  | north       | 7.509          | 943  | 79.866         | 185            | 100              | 280            | 2.447158 | 1.902362 |
+| 3  | Iceland      | Western Europe  | north       | 7.501          | 933  | 60.530         | 233            | 61               | 78             | 1.892095 | 1.781971 |
+| 4  | Norway       | Western Europe  | north       | 7.498          | 951  | 70.890         | 169            | 71               | 129            | 2.110590 | 1.850585 |
+| 5  | Finland      | Western Europe  | north       | 7.413          | 918  | 43.433         | 263            | 133              | 97             | 1.986772 | 1.637820 |
+| 6  | Canada       | North America   | north       | 7.404          | 922  | 42.349         | 240            | 122              | 100            | 2.000000 | 1.626843 |
+
+--
 
 # 3. Visualizando outliers em **GDP_PerCapita**
 
@@ -122,7 +135,7 @@ sd(Wine_PerCapita)
 | Desvio padrão  | 88.1215          |
 | Variância      | 7765.399          |
 
-## Visualiando a assimetria da distribuição e verifcando a existência de outliers
+## Visualizando a assimetria da distribuição e verifcando a existência de outliers
 
 ```r
 ggplot(happiness, aes(x = "", y = Wine_PerCapita)) +
