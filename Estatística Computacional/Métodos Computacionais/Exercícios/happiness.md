@@ -89,7 +89,7 @@ happiness[happiness$GDP_PerCapita %in% outliers, c("Country", "GDP_PerCapita")]
 
 📌 Comentários
 - Após a execução do código, foi gerada uma tabela que apresenta os países que são outliers, conforme ilustrado acima
-- Os paises listados na tabela acima
+- Os paises listados na tabela acima têm em comum o **alto nível de desenvolvimento humano**, principalmente caracterizado pela **alta renda per capita**.
 
 # 4.  Analise Descritiva da variável Wine_PerCapita
 
