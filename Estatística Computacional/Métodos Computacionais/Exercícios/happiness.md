@@ -49,4 +49,80 @@ ggplot(happiness, aes(x = "", y = GDP_PerCapita)) +
   theme_minimal() + 
   coord_flip()
 
-´´´
+```
+
+![Image](https://github.com/user-attachments/assets/dc34217e-f11a-4007-910e-5aa594fe94f5)
+
+📌 Comentários
+- O boxplot mostra a existência de outliers (11) na distribuição, sendo todos eles no limite superior
+- Quais países representam esses outliers outliers ?
+
+
+### Descobrindo quais países são oultiers
+
+``` r
+## Calculando os limites do box plot
+happiness_out = boxplot(happiness$GDP_PerCapita, plot = F)
+outliers = happiness_out$out
+
+## Mostrando países que são ouliers
+happiness[happiness$GDP_PerCapita %in% outliers, c("Country", "GDP_PerCapita")]
+
+```
+
+| Country        | GDP_PerCapita |
+|----------------|---------------|
+| Denmark        | 53.6          |
+| Switzerland    | 79.9          |
+| Iceland        | 60.5          |
+| Norway         | 70.9          |
+| Australia      | 49.9          |
+| Sweden         | 51.8          |
+| United States  | 57.6          |
+| Ireland        | 64.1          |
+| Luxembourg     | 101.0         |
+| Singapore      | 55.2          |
+| Qatar          | 59.3          |
+
+📌 Comentários
+- Após a execução do código, foi gerada uma tabela que apresenta os países que são outliers, conforme ilustrado acima
+
+# 4.  Analise Descritiva da variável Wine_PerCapita
+
+``` r
+
+attach(happiness)
+
+# Sumário da variável
+summary(Wine_PerCapita)
+
+# Variância da variável
+var(Wine_PerCapita)
+
+# Desvio padrão da variável
+sd(Wine_PerCapita)
+
+```
+
+📌 Comentários
+- Após a execução do código, foi gerado os seguintes resultados abaixo:
+
+| Medida         | Resultado |
+|----------------|---------------|
+| Minimo         | 1.0         |
+| 1 quartil      | 5.0          |
+| Mediana        | 16.0          |
+| Média          | 66.6          |
+| 3 quartil      | 112.8          |
+| Máximo         | 370.0          |
+| Desvio padrão  | 88.1215          |
+| Variância      | 7765.399          |
+
+## Visualiando a simetria da distribuição e verifcando a existência de outliers
+
+```r
+ggplot(happiness, aes(x = "", y = Wine_PerCapita)) +
+  geom_boxplot(fill = "lightblue", outlier.color = "red", outlier.shape = 8) +
+  labs(title = "Boxplot do PIB per capita", y = "Wine per capita") +
+  theme_minimal() + 
+  coord_flip()
