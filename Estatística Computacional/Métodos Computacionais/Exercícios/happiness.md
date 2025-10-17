@@ -1,6 +1,6 @@
 # 1. Introdução
 
-O banco de dados p41b.xlsx contém dados sobre o grau de felicidade de 122 países, a partir de algumas variáveis abaixo: 
+O banco de dados **p41b.xlsx** contém dados sobre o grau de felicidade de 122 países, a partir de algumas variáveis abaixo: 
 
 - **Hemisphere (Hemisfério norte e sul)**;
 - **HDI (Indice de Desenvolvimento Humano)**;
@@ -10,6 +10,9 @@ O banco de dados p41b.xlsx contém dados sobre o grau de felicidade de 122 país
 - **Wine_PerCapita (Consumo de vinho)**;
 
 ---
+# Dados. 
+
+- **p41b.xlsx** - banco de dados que contém informações sobre o grau de felicidade de 122 países.
 
 # 1.1. Neste relatório, serão realizadas:
 
