@@ -150,3 +150,4 @@ ggplot(happiness, aes(x = Hemisphere, y = HappinessScore)) +
   ggtitle("Box plot do Happiness Score por Hemisferio")
 
 ```
+![Image](https://github.com/user-attachments/assets/98f478bb-ff61-4051-8e1b-1770f30a0514)
