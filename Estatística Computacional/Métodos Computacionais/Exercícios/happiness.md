@@ -113,11 +113,11 @@ sd(Wine_PerCapita)
 
 | Medida         | Resultado |
 |----------------|---------------|
-| Minimo         | 1.0         |
-| 1 quartil      | 5.0          |
+| Mínimo         | 1.0         |
+| 1º quartil      | 5.0          |
 | Mediana        | 16.0          |
 | Média          | 66.6          |
-| 3 quartil      | 112.8          |
+| 3º quartil      | 112.8          |
 | Máximo         | 370.0          |
 | Desvio padrão  | 88.1215          |
 | Variância      | 7765.399          |
@@ -140,3 +140,13 @@ ggplot(happiness, aes(x = "", y = Wine_PerCapita)) +
 - A **mediana** está mais próxima da parte inferior da caixa, mostrando que a maior parte da distribuição está concentrada nos
   valores menores;
 - Alguns outliers puxam a cauda para a direita
+
+
+# 6. Box plot da variável **HapinessScore** por hemisfério
+
+```r
+ggplot(happiness, aes(x = Hemisphere, y = HappinessScore)) +
+  geom_boxplot(width = .2, outlier.color = "red", outlier.shape = 8) +
+  ggtitle("Box plot do Happiness Score por Hemisferio")
+
+```
