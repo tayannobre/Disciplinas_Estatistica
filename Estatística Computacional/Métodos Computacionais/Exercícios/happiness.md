@@ -1,7 +1,12 @@
 # 1. Introdução
 
 O banco de dados happiness.xls contém dados sobre o grau de felicidade de 122 países, a aprtir das variáveis, 
-**Hemisphere**, **HDI**, **GDP_PerCapita**, **Beer_PerCapita**, **Spirit_PerCapita** e **Wine_PerCapita**.
+- **Hemisphere**,
+- **HDI**,
+- **GDP_PerCapita**,
+- **Beer_PerCapita**,
+- **Spirit_PerCapita** e
+- **Wine_PerCapita**.
 
 ---
 
@@ -118,7 +123,7 @@ sd(Wine_PerCapita)
 | Desvio padrão  | 88.1215          |
 | Variância      | 7765.399          |
 
-## Visualiando a simetria da distribuição e verifcando a existência de outliers
+## Visualiando a assimetria da distribuição e verifcando a existência de outliers
 
 ```r
 ggplot(happiness, aes(x = "", y = Wine_PerCapita)) +
@@ -126,3 +131,13 @@ ggplot(happiness, aes(x = "", y = Wine_PerCapita)) +
   labs(title = "Boxplot do PIB per capita", y = "Wine per capita") +
   theme_minimal() + 
   coord_flip()
+
+````
+
+![Image](https://github.com/user-attachments/assets/be2f6e8a-37b1-48af-b8e0-11a09c579be0)
+
+📌 Comentários 
+- Como pode ser visto no boxplot acima, temos uma distribuição assimetrica a direita;
+- A **mediana** está mais próxima da parte inferior da caixa, mostrando que a maior parte da distribuição está concentrada nos
+  valores menores;
+- Alguns outliers puxam a cauda para a direita
