@@ -154,7 +154,19 @@ ggplot(happiness, aes(x = Hemisphere, y = HappinessScore)) +
 
 📌 Comentários
 
-- O boxplot acima evidência que os países do hemisfério norte tendem apresentar maiores níveis de felicidade em comparação aos do hemisfério sul, com menor dispersão dos valores.
-- Norte: distribuição aproximadamente simétrica
-- Sul: distribuição assimétrica a direita
+- O boxplot acima evidência que os países do hemisfério norte tendem apresentar maiores níveis de felicidade em comparação aos do hemisfério sul, com menor dispersão dos valores;
+- Norte: distribuição aproximadamente simétrica;
+- Sul: distribuição assimétrica a direita;
 - Ambos gráficos não apresentam valores extremos.
+
+
+# 7. Correlação entre **HapinessScore** e **Wine_PerCapita**
+
+```r
+cor(HappinessScore, Wine_PerCapita)
+
+```
+📌 Comentários
+
+- Ao executar o código foi obtido o score de **0.4505886**, evidenciando uma correlação postiva moderada;
+- Correlação não implica causualidade.
