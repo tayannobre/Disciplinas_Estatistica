@@ -40,5 +40,13 @@ head(happiness)
 install.packages("ggplot2")
 
 # 3.2. Carregando o pacote
-library(ggplot2)
+library(ggplot2
 
+# 3.2. Plotando box plot para a visualização de outliers
+ggplot(happiness, aes(x = "", y = GDP_PerCapita)) +
+  geom_boxplot(fill = "lightblue", outlier.color = "red", outlier.shape = 8) +
+  labs(title = "Boxplot do PIB per capita", y = "GDP per capita") +
+  theme_minimal() + 
+  coord_flip()
+
+´´´
