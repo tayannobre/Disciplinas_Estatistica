@@ -151,3 +151,10 @@ ggplot(happiness, aes(x = Hemisphere, y = HappinessScore)) +
 
 ```
 ![Image](https://github.com/user-attachments/assets/98f478bb-ff61-4051-8e1b-1770f30a0514)
+
+📌 Comentários
+
+- O boxplot acima evidência que os países do hemisfério norte tendem apresentar maiores níveis de felicidade em comparação aos do hemisfério sul, com menor dispersão dos valores.
+- Norte: distribuição aproximadamente simétrica
+- Sul: distribuição assimétrica a direita
+- Ambos gráficos não apresentam valores extremos.
