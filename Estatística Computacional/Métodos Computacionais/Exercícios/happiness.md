@@ -1,22 +1,22 @@
 # 1. Introdução
 
 O banco de dados happiness.xls contém dados sobre o grau de felicidade de 122 países, a aprtir das variáveis: 
-- **Hemisphere**
-- **HDI (Indice de Desenvolvimento Humano)**
-- **GDP_PerCapita (PIB Per Capita)**
-- **Beer_PerCapita (Consumo de cerveja)**
-- **Spirit_PerCapita (Consumo de álcool destilado)**
-- **Wine_PerCapita (Consumo de vinho)**
+- **Hemisphere (Hemisfério norte e sul)**;
+- **HDI (Indice de Desenvolvimento Humano)**;
+- **GDP_PerCapita (PIB Per Capita)**;
+- **Beer_PerCapita (Consumo de cerveja)**;
+- **Spirit_PerCapita (Consumo de álcool destilado)**;
+- **Wine_PerCapita (Consumo de vinho)**;
 
 ---
 
 # 1.1. Neste relatório, serão realizadas:
 
--   análise descritiva;
+-   Análise descritiva;
 
--   correções de variáveis;
+-   Correções de variáveis;
 
--   estudo de correlação com base no código fornecido.
+-   Estudo de correlação.
 
 
 # 2. Importação e preparação dos dados
@@ -45,7 +45,7 @@ head(happiness)
 install.packages("ggplot2")
 
 # 3.2. Carregando o pacote
-library(ggplot2
+library(ggplot2)
 
 # 3.2. Plotando box plot para a visualização de outliers
 ggplot(happiness, aes(x = "", y = GDP_PerCapita)) +
