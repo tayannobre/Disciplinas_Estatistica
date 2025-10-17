@@ -59,10 +59,8 @@ ggplot(happiness, aes(x = "", y = GDP_PerCapita)) +
 ![Image](https://github.com/user-attachments/assets/dc34217e-f11a-4007-910e-5aa594fe94f5)
 
 📌 Comentários
-- O boxplot mostra a existência de outliers (11) na distribuição, sendo todos eles no limite superior
-- Quais países representam esses outliers outliers ?
-
-
+- O boxplot mostra a presença de 11 outliers na distribuição, todos situados no limite superior.
+- Quais países representam esses outliers e o que eles tem em comum?
 ### Descobrindo quais países são oultiers
 
 ``` r
@@ -91,6 +89,7 @@ happiness[happiness$GDP_PerCapita %in% outliers, c("Country", "GDP_PerCapita")]
 
 📌 Comentários
 - Após a execução do código, foi gerada uma tabela que apresenta os países que são outliers, conforme ilustrado acima
+- Os paises listados na tabela acima
 
 # 4.  Analise Descritiva da variável Wine_PerCapita
 
