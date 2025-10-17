@@ -19,7 +19,7 @@ O banco de dados **p41b.xlsx** contém dados sobre o grau de felicidade de 122 p
 
 -   Análise descritiva;
 -   Criação de gráficos para entender a distribuição;
--   Estudo de correlação.
+-   Correlação entre variáveis.
 
 
 # 2. Importação e preparação dos dados
