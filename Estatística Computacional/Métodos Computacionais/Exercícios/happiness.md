@@ -60,7 +60,7 @@ ggplot(happiness, aes(x = "", y = GDP_PerCapita)) +
 
 📌 Comentários
 - O boxplot mostra a presença de 11 outliers na distribuição, todos situados no limite superior.
-- Quais países representam esses outliers e o que eles tem em comum?
+- Quais países representam esses outliers e o que eles têm em comum?
 ### Descobrindo quais países são oultiers
 
 ``` r
