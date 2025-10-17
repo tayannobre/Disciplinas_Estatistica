@@ -1,12 +1,12 @@
 # 1. Introdução
 
-O banco de dados happiness.xls contém dados sobre o grau de felicidade de 122 países, a aprtir das variáveis, 
-- **Hemisphere**,
-- **HDI**,
-- **GDP_PerCapita**,
-- **Beer_PerCapita**,
-- **Spirit_PerCapita** e
-- **Wine_PerCapita**.
+O banco de dados happiness.xls contém dados sobre o grau de felicidade de 122 países, a aprtir das variáveis: 
+- **Hemisphere**
+- **HDI (Indice de Desenvolvimento Humano)**
+- **GDP_PerCapita (PIB Per Capita)**
+- **Beer_PerCapita (Consumo de cerveja)**
+- **Spirit_PerCapita (Consumo de álcool destilado)**
+- **Wine_PerCapita (Consumo de vinho)**
 
 ---
 
