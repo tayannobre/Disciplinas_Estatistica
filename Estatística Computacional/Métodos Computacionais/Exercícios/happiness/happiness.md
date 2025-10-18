@@ -7,7 +7,7 @@ O banco de dados **p41b.xlsx** contém dados sobre o grau de felicidade de 122 p
 - **GDP_PerCapita (PIB Per Capita)**;
 - **Beer_PerCapita (Consumo de cerveja)**;
 - **Spirit_PerCapita (Consumo de álcool destilado)**;
-- **Wine_PerCapita (Consumo de vinho)**;
+- **Wine_PerCapita (Consumo de vinho)**.
 
 ---
 # Dados
