@@ -10,9 +10,9 @@ O banco de dados **p41b.xlsx** contém dados sobre o grau de felicidade de 122 p
 - **Wine_PerCapita (Consumo de vinho)**;
 
 ---
-# Dados. 
+# Dados
 
-- **p41b.xlsx** - banco de dados que contém informações sobre o grau de felicidade de 122 países;
+- **p41b.xlsx** - banco de dados que contém informações sobre o grau de felicidade de 122 países (em formato xlsx);
 - **happiness.csv** - banco de dados que contém informações sobre o grau de felicidade de 122 países (em formato csv).
 
 # 1.1. Neste relatório, serão realizadas:
@@ -76,7 +76,7 @@ ggplot(happiness, aes(x = "", y = GDP_PerCapita)) +
 ![Image](https://github.com/user-attachments/assets/dc34217e-f11a-4007-910e-5aa594fe94f5)
 
 📌 Comentários
-- O boxplot mostra a presença de 11 outliers na distribuição, todos situados no limite superior.
+- O boxplot mostra a presença de 11 outliers na distribuição, todos situados no limite superior;
 - Quais países representam esses outliers e o que eles têm em comum?
 ### Descobrindo quais países são oultiers
 
