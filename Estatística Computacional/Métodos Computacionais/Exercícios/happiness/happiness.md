@@ -154,9 +154,8 @@ ggplot(happiness, aes(x = "", y = Wine_PerCapita)) +
 
 📌 Comentários 
 - Como pode ser visto no boxplot acima, temos uma distribuição assimetrica a direita;
-- A **mediana** está mais próxima da parte inferior da caixa, mostrando que a maior parte da distribuição está concentrada nos
-  valores menores;
-- Alguns outliers puxam a cauda para a direita
+- A **mediana** está mais próxima da parte inferior da caixa, mostrando que a maior parte da distribuição está concentrada nos valores menores;
+- Alguns outliers puxam a cauda para a direita.
 
 
 # 6. Box plot da variável **HapinessScore** por hemisfério
