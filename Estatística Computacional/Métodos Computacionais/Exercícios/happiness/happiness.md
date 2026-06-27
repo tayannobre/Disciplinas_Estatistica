@@ -189,3 +189,68 @@ cor(HappinessScore, Wine_PerCapita)
 - Correlação não implica causualidade.
 
 # 8. Quais variáveis são significantes?
+
+## Construindo o modelo.
+
+Foi ajustado um modelo de regressão linear múltipla pelo método dos Mínimos Quadrados Ordinários (MQO).
+
+O modelo de regressão estimado foi:
+
+Ŷ = β₀ + β₁X₁ + β₂X₂ + β₃X₃ + β₄X₄ + β₅X₅ + β₆X₆
+
+onde:
+
+* Ŷ = HappinessScore estimado
+* X₁ = Hemisphere
+* X₂ = HDI
+* X₃ = GDP_PerCapita
+* X₄ = Beer_PerCapita
+* X₅ = Spirit_PerCapita
+* X₆ = Wine_PerCapita
+
+```r
+
+## Construindo o modelo
+modelo_happiness = lm(HappinessScore ~ Hemisphere +
+HDI +
+GDP_PerCapita +
+Beer_PerCapita +
+Spirit_PerCapita +
+Wine_PerCapita,
+data = happiness)
+
+## Visualizando o modelo
+modelo_happiness
+
+## Sumário do modelo
+summary(modelo_happiness)
+```
+## Resultados
+
+Assumindo um nível de significância de 5% (α = 0.05), analisamos os p-valores.
+
+| Variável | p-valor | Conclusão|
+|----------|---------|----------|
+|Hemisphere| 0,798846| Não Significativa|
+|HDI |< 0,001 | Significativa|
+|GDP_PerCapita | < 0,001 | Significativa|
+|Beer_PerCapita | 0,309024 | Não Significativa|
+|Spirit_PerCapita | 0,642516 | Não Significativa|
+|Wine_PerCapita | 0,013935 | Significativa|
+
+## O modelo é significativo? 
+
+Sim. 
+
+O teste F apresentou os resultados abaixo: 
+
+* F: 49,55
+*  p < 2,2 x 10^-16
+*  Como o p-valor é muito menor que 0,05, conclui-se que o modelo de regressão é estatisticamente significativo.
+
+## Qualidade do Ajuste
+
+* R² = 0,7211. Isso significa que 72,11% da variação do índice de felicidade é explicada pelo conjunto das variáveis independentes.
+* R² ajustado = 0,7065. Após considerar o número de variáveis do modelo, aproximadamente 70,65% da variabilidade continua sendo explicada, indicando um bom ajuste.
+
+
