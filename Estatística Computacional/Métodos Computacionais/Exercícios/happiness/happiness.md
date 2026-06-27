@@ -187,3 +187,5 @@ cor(HappinessScore, Wine_PerCapita)
 
 - Ao executar o código foi obtido o score de **0.4505886**, evidenciando uma correlação postiva moderada;
 - Correlação não implica causualidade.
+
+# 8. Quais variáveis são significantes?
