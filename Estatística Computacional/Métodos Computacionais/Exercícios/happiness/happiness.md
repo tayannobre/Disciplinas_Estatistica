@@ -190,7 +190,7 @@ cor(HappinessScore, Wine_PerCapita)
 
 # 8. Quais variáveis são significantes?
 
-## Construindo o modelo.
+## Construindo o modelo
 
 Foi ajustado um modelo de regressão linear múltipla pelo método dos Mínimos Quadrados Ordinários (MQO).
 
